@@ -1,247 +1,1446 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jose Luiz Claudio Camargo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f4f6f9;
-    color: #333;
-}
+    <title>64.698.007 Jose Luiz Claudio Camargo | Transporte Rodoviário de Carga</title>
 
-header {
-    background: linear-gradient(135deg, #0a2a4f, #154a8a);
-    padding: 25px 40px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <meta name="description"
+          content="64.698.007 Jose Luiz Claudio Camargo — transporte rodoviário de carga, exceto produtos perigosos e mudanças, municipal.">
 
-header h1 {
-    margin: 0;
-    font-size: 26px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-nav a {
-    color: #fff;
-    margin-left: 25px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-.hero {
-    padding: 100px 20px;
-    text-align: center;
-    background: url('https://images.unsplash.com/photo-1519003722824-194d4455a60c') center/cover no-repeat;
-    color: #fff;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f9fc;
+            color: #182230;
+            line-height: 1.6;
+        }
 
-.hero h2 {
-    font-size: 40px;
-    font-weight: 700;
-    text-shadow: 0 3px 8px rgba(0,0,0,0.4);
-}
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
 
-.hero p {
-    font-size: 20px;
-    margin-top: 15px;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
-}
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
 
-section {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 40px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-}
+        /* HEADER */
 
-h2 {
-    color: #0a2a4f;
-    font-size: 28px;
-    margin-bottom: 15px;
-}
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid #e8edf3;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 20px;
-}
+        .nav {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
 
-.card {
-    background: #f9fbfd;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #e3e9f0;
-    transition: 0.2s;
-}
+        .logo {
+            font-size: 18px;
+            font-weight: 800;
+            color: #123d69;
+            max-width: 330px;
+        }
 
-.card:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    transform: translateY(-4px);
-}
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            list-style: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
 
-.card h3 {
-    color: #154a8a;
-}
+        .menu a {
+            transition: .2s;
+        }
 
-footer {
-    background: #0a2a4f;
-    padding: 25px;
-    color: #fff;
-    text-align: center;
-    margin-top: 60px;
-}
+        .menu a:hover {
+            color: #1464a5;
+        }
 
-footer a {
-    color: #79b8ff;
-    text-decoration: none;
-}
-</style>
+        .whatsapp {
+            background: #168b50;
+            color: #fff;
+            padding: 11px 17px;
+            border-radius: 8px;
+            font-weight: 700;
+        }
+
+        .whatsapp:hover {
+            background: #116d3f;
+            color: #fff;
+        }
+
+        /* HERO */
+
+        .hero {
+            background:
+                linear-gradient(135deg, #0c3154, #155f91);
+            color: white;
+            padding: 100px 0 95px;
+        }
+
+        .hero-content {
+            max-width: 820px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(255,255,255,.13);
+            border: 1px solid rgba(255,255,255,.2);
+            padding: 8px 13px;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 5vw, 58px);
+            line-height: 1.08;
+            margin-bottom: 22px;
+            letter-spacing: -1.5px;
+        }
+
+        .hero p {
+            max-width: 760px;
+            font-size: 18px;
+            color: #e8f3fb;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 13px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 21px;
+            border-radius: 8px;
+            font-weight: 700;
+            border: 1px solid transparent;
+        }
+
+        .btn-primary {
+            background: #fff;
+            color: #104d7b;
+        }
+
+        .btn-secondary {
+            border-color: rgba(255,255,255,.35);
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,.1);
+        }
+
+        /* SECTION */
+
+        section {
+            padding: 82px 0;
+        }
+
+        .section-label {
+            color: #1670a9;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+        }
+
+        .section-title {
+            font-size: 37px;
+            line-height: 1.15;
+            margin-bottom: 17px;
+            color: #142b40;
+        }
+
+        .section-description {
+            color: #657486;
+            max-width: 720px;
+            margin-bottom: 40px;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e5ebf1;
+            border-radius: 13px;
+            padding: 25px;
+            box-shadow: 0 7px 25px rgba(20,45,70,.05);
+        }
+
+        .card-number {
+            width: 38px;
+            height: 38px;
+            border-radius: 9px;
+            background: #eaf4fb;
+            color: #12679c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #17344d;
+        }
+
+        .card p {
+            color: #697887;
+            font-size: 14px;
+        }
+
+        .card ul {
+            padding-left: 18px;
+            color: #697887;
+            font-size: 14px;
+        }
+
+        .card li {
+            margin-bottom: 7px;
+        }
+
+        /* ABOUT */
+
+        .about {
+            background: #fff;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.15fr .85fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text p {
+            color: #647384;
+            margin-bottom: 17px;
+        }
+
+        .company-box {
+            background: #f4f8fb;
+            border: 1px solid #e0e9f0;
+            border-radius: 15px;
+            padding: 28px;
+        }
+
+        .company-box h3 {
+            margin-bottom: 20px;
+            color: #173b58;
+        }
+
+        .data {
+            padding: 14px 0;
+            border-bottom: 1px solid #dfe7ed;
+        }
+
+        .data:last-child {
+            border-bottom: none;
+        }
+
+        .data strong {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #7a8996;
+            letter-spacing: .6px;
+            margin-bottom: 3px;
+        }
+
+        .data span {
+            color: #20384d;
+            font-weight: 600;
+        }
+
+        /* SERVICES */
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .service {
+            background: white;
+            border: 1px solid #e3eaf0;
+            border-radius: 14px;
+            padding: 28px;
+        }
+
+        .service h3 {
+            font-size: 20px;
+            margin-bottom: 14px;
+            color: #143a58;
+        }
+
+        .service p {
+            color: #657586;
+        }
+
+        .service ul {
+            margin-top: 15px;
+            padding-left: 20px;
+            color: #667788;
+        }
+
+        .service li {
+            margin: 7px 0;
+        }
+
+        /* PROCESS */
+
+        .process {
+            background: #edf5fa;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .step {
+            background: #fff;
+            padding: 25px;
+            border-radius: 13px;
+            border: 1px solid #dce8ef;
+        }
+
+        .step strong {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: #145e8e;
+            color: white;
+            margin-bottom: 17px;
+        }
+
+        .step h3 {
+            margin-bottom: 8px;
+            font-size: 17px;
+        }
+
+        .step p {
+            color: #697988;
+            font-size: 14px;
+        }
+
+        /* CONTENT */
+
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .article {
+            background: white;
+            border: 1px solid #e1e8ee;
+            border-radius: 13px;
+            padding: 26px;
+        }
+
+        .article small {
+            color: #1770a4;
+            font-weight: 700;
+        }
+
+        .article h3 {
+            margin: 11px 0;
+            color: #19364f;
+        }
+
+        .article p {
+            color: #697988;
+            font-size: 14px;
+        }
+
+        /* FAQ */
+
+        .faq {
+            background: #fff;
+        }
+
+        .faq-list {
+            max-width: 850px;
+        }
+
+        details {
+            background: #f7f9fb;
+            border: 1px solid #e0e7ed;
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin-bottom: 12px;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 700;
+            color: #1b354c;
+        }
+
+        details p {
+            padding-top: 12px;
+            color: #687887;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background: #0d3557;
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 50px;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            color: #d5e4ee;
+        }
+
+        .contact-info {
+            margin-top: 28px;
+        }
+
+        .contact-item {
+            margin-bottom: 18px;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .contact-item span {
+            color: #c8dce9;
+        }
+
+        form {
+            background: white;
+            border-radius: 14px;
+            padding: 28px;
+        }
+
+        .field {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            color: #31475a;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #d5dfe7;
+            border-radius: 8px;
+            font: inherit;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #3281b5;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            background: #126da2;
+            color: white;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 15px;
+        }
+
+        .submit:hover {
+            background: #0e5987;
+        }
+
+        /* PRIVACY */
+
+        .privacy-box {
+            background: white;
+            border: 1px solid #e0e7ed;
+            border-radius: 14px;
+            padding: 32px;
+        }
+
+        .privacy-box h3 {
+            margin: 24px 0 8px;
+            color: #173a56;
+        }
+
+        .privacy-box h3:first-child {
+            margin-top: 0;
+        }
+
+        .privacy-box p {
+            color: #657585;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #09283f;
+            color: #d8e6ef;
+            padding: 45px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr;
+            gap: 35px;
+            padding-bottom: 35px;
+        }
+
+        footer h3 {
+            color: white;
+            margin-bottom: 14px;
+            font-size: 17px;
+        }
+
+        footer p,
+        footer li {
+            font-size: 14px;
+            color: #b7cbd8;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 8px;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,.1);
+            padding-top: 20px;
+            font-size: 13px;
+            color: #9fb6c6;
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+
+            .menu {
+                display: none;
+            }
+
+            .cards,
+            .process-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .articles {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 70px 0;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .cards,
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .logo {
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
+    <div class="container nav">
 
-<h1>Jose Luiz Claudio Camargo</h1>
+        <a href="#inicio" class="logo">
+            64.698.007 JOSE LUIZ CLAUDIO CAMARGO
+        </a>
 
-<nav>
-<a href="index.html">Início</a>
-<a href="politica-de-privacidade.html">Política de Privacidade</a>
-</nav>
+        <ul class="menu">
+            <li><a href="#empresa">Quem Somos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#conteudo">Conteúdo</a></li>
+            <li><a href="#privacidade">Privacidade</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li>
+                <a href="#contato" class="whatsapp">Atendimento</a>
+            </li>
+        </ul>
 
+    </div>
 </header>
 
-<div class="hero">
 
-<h2>Transporte Rodoviário de Carga</h2>
+<main>
 
-<p>
-Soluções em transporte de cargas para atender às necessidades de nossos clientes.
-</p>
+    <!-- HERO -->
 
-</div>
+    <section class="hero" id="inicio">
+        <div class="container">
 
-<section>
+            <div class="hero-content">
 
-<h2>Quem Somos</h2>
+                <span class="tag">
+                    Transporte rodoviário de carga
+                </span>
 
-<p>
-A empresa <strong>64.698.007 Jose Luiz Claudio Camargo</strong>,
-inscrita no CNPJ <strong>64.698.007/0001-01</strong>,
-foi fundada em <strong>25/01/2026</strong>, na cidade de
-<strong>Rio de Janeiro – RJ</strong>.
-</p>
+                <h1>
+                    64.698.007 JOSE LUIZ CLAUDIO CAMARGO
+                </h1>
 
-<p>
-Sua atividade principal, conforme a Receita Federal, é
-<strong>49.30-2-01 - Transporte rodoviário de carga, exceto produtos
-perigosos e mudanças, municipal</strong>.
-Sua situação cadastral é <strong>Ativa</strong>.
-</p>
+                <p>
+                    Atuação em transporte rodoviário de carga,
+                    exceto produtos perigosos e mudanças, com
+                    foco em operações municipais no Rio de Janeiro/RJ.
+                </p>
 
-<p>
-A empresa atua no segmento de transporte rodoviário de cargas,
-oferecendo soluções voltadas ao deslocamento de mercadorias
-em operações de transporte municipal.
-</p>
+                <div class="buttons">
+                    <a href="#contato" class="btn btn-primary">
+                        Entre em contato
+                    </a>
 
-</section>
+                    <a href="#servicos" class="btn btn-secondary">
+                        Conheça os serviços
+                    </a>
+                </div>
 
-<section>
+            </div>
 
-<h2>Nossos Serviços</h2>
+        </div>
+    </section>
 
-<div class="grid">
 
-<div class="card">
-<h3>Transporte de Cargas</h3>
-<p>
-Serviços de transporte rodoviário de cargas em operações municipais.
-</p>
-</div>
+    <!-- DIFERENCIAIS -->
 
-<div class="card">
-<h3>Logística</h3>
-<p>
-Soluções para deslocamento organizado de mercadorias e cargas.
-</p>
-</div>
+    <section>
+        <div class="container">
 
-<div class="card">
-<h3>Transporte Municipal</h3>
-<p>
-Atendimento às necessidades de transporte de cargas dentro do município.
-</p>
-</div>
+            <div class="section-label">
+                Nossa atuação
+            </div>
 
-<div class="card">
-<h3>Atendimento</h3>
-<p>
-Atendimento direcionado às necessidades de cada cliente e operação.
-</p>
-</div>
+            <h2 class="section-title">
+                Transporte com organização e responsabilidade
+            </h2>
 
-</div>
+            <p class="section-description">
+                A empresa atua no segmento de transporte rodoviário
+                de carga municipal, buscando oferecer uma operação
+                organizada e adequada às necessidades de cada serviço.
+            </p>
 
-</section>
+            <div class="cards">
 
-<section>
+                <div class="card">
+                    <div class="card-number">01</div>
+                    <h3>Atendimento</h3>
+                    <p>
+                        Comunicação direta para alinhamento das
+                        necessidades de transporte.
+                    </p>
+                </div>
 
-<h2>Nossos Pilares</h2>
+                <div class="card">
+                    <div class="card-number">02</div>
+                    <h3>Operação Municipal</h3>
+                    <p>
+                        Atuação direcionada ao transporte rodoviário
+                        de cargas dentro do âmbito municipal.
+                    </p>
+                </div>
 
-<div class="grid">
+                <div class="card">
+                    <div class="card-number">03</div>
+                    <h3>Organização</h3>
+                    <p>
+                        Planejamento das operações de acordo com
+                        as características de cada transporte.
+                    </p>
+                </div>
 
-<div class="card">
-<h3>Missão</h3>
-<p>
-Oferecer serviços de transporte de cargas com responsabilidade,
-organização e eficiência.
-</p>
-</div>
+                <div class="card">
+                    <div class="card-number">04</div>
+                    <h3>Transparência</h3>
+                    <p>
+                        Informações empresariais apresentadas de
+                        forma clara e institucional.
+                    </p>
+                </div>
 
-<div class="card">
-<h3>Visão</h3>
-<p>
-Buscar reconhecimento pela qualidade e confiabilidade dos serviços
-de transporte prestados.
-</p>
-</div>
+            </div>
 
-<div class="card">
-<h3>Valores</h3>
-<p>
-Responsabilidade, pontualidade, organização, segurança e compromisso
-com o cliente.
-</p>
-</div>
+        </div>
+    </section>
 
-</div>
 
-</section>
+    <!-- EMPRESA -->
+
+    <section class="about" id="empresa">
+        <div class="container">
+
+            <div class="about-grid">
+
+                <div class="about-text">
+
+                    <div class="section-label">
+                        A empresa
+                    </div>
+
+                    <h2 class="section-title">
+                        Quem Somos
+                    </h2>
+
+                    <p>
+                        A <strong>64.698.007 JOSE LUIZ CLAUDIO CAMARGO</strong>
+                        é uma empresa estabelecida na cidade do
+                        Rio de Janeiro, no estado do Rio de Janeiro.
+                    </p>
+
+                    <p>
+                        Sua atividade econômica principal está relacionada
+                        ao transporte rodoviário de carga, exceto produtos
+                        perigosos e mudanças, com atuação municipal.
+                    </p>
+
+                    <p>
+                        A empresa foi fundada em 25 de janeiro de 2026
+                        e possui situação cadastral ativa.
+                    </p>
+
+                </div>
+
+                <div class="company-box">
+
+                    <h3>Dados da empresa</h3>
+
+                    <div class="data">
+                        <strong>Nome empresarial</strong>
+                        <span>64.698.007 Jose Luiz Claudio Camargo</span>
+                    </div>
+
+                    <div class="data">
+                        <strong>CNPJ</strong>
+                        <span>64.698.007/0001-01</span>
+                    </div>
+
+                    <div class="data">
+                        <strong>Data de fundação</strong>
+                        <span>25/01/2026</span>
+                    </div>
+
+                    <div class="data">
+                        <strong>Localização</strong>
+                        <span>Rio de Janeiro - RJ</span>
+                    </div>
+
+                    <div class="data">
+                        <strong>Situação cadastral</strong>
+                        <span>Ativa</span>
+                    </div>
+
+                    <div class="data">
+                        <strong>Atividade principal</strong>
+                        <span>
+                            49.30-2-01 - Transporte rodoviário de carga,
+                            exceto produtos perigosos e mudanças, municipal
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SERVIÇOS -->
+
+    <section id="servicos">
+        <div class="container">
+
+            <div class="section-label">
+                Nossas soluções
+            </div>
+
+            <h2 class="section-title">
+                O que Oferecemos
+            </h2>
+
+            <p class="section-description">
+                Atuação voltada ao transporte rodoviário de cargas
+                dentro da categoria de atividade registrada pela empresa.
+            </p>
+
+            <div class="service-grid">
+
+                <div class="service">
+                    <h3>Transporte Rodoviário de Cargas</h3>
+
+                    <p>
+                        Serviço direcionado ao transporte de cargas
+                        por vias rodoviárias dentro da área municipal.
+                    </p>
+
+                    <ul>
+                        <li>Transporte municipal de cargas</li>
+                        <li>Organização das operações</li>
+                        <li>Planejamento de rotas</li>
+                        <li>Atendimento conforme a necessidade da operação</li>
+                    </ul>
+                </div>
+
+
+                <div class="service">
+                    <h3>Operações de Transporte</h3>
+
+                    <p>
+                        Apoio na organização das etapas necessárias
+                        para realização do transporte rodoviário.
+                    </p>
+
+                    <ul>
+                        <li>Alinhamento da coleta</li>
+                        <li>Planejamento do deslocamento</li>
+                        <li>Organização da entrega</li>
+                        <li>Acompanhamento da operação</li>
+                    </ul>
+                </div>
+
+
+                <div class="service">
+                    <h3>Transporte de Cargas Diversas</h3>
+
+                    <p>
+                        Operações compatíveis com a atividade principal
+                        registrada, observando as características
+                        específicas de cada carga.
+                    </p>
+
+                    <ul>
+                        <li>Cargas permitidas pela legislação aplicável</li>
+                        <li>Operações municipais</li>
+                        <li>Planejamento conforme o destino</li>
+                        <li>Organização logística</li>
+                    </ul>
+                </div>
+
+
+                <div class="service">
+                    <h3>Atendimento Personalizado</h3>
+
+                    <p>
+                        Cada solicitação pode ser avaliada conforme
+                        suas características, origem, destino e
+                        necessidades de transporte.
+                    </p>
+
+                    <ul>
+                        <li>Análise da necessidade</li>
+                        <li>Definição da operação</li>
+                        <li>Alinhamento de prazos</li>
+                        <li>Informações antes da contratação</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROCESSO -->
+
+    <section class="process">
+        <div class="container">
+
+            <div class="section-label">
+                Como funciona
+            </div>
+
+            <h2 class="section-title">
+                Do contato à entrega
+            </h2>
+
+            <p class="section-description">
+                Um processo simples para organizar cada solicitação
+                de transporte.
+            </p>
+
+            <div class="process-grid">
+
+                <div class="step">
+                    <strong>1</strong>
+                    <h3>Contato</h3>
+                    <p>
+                        O cliente apresenta sua necessidade
+                        de transporte.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <strong>2</strong>
+                    <h3>Informações</h3>
+                    <p>
+                        São avaliados origem, destino, carga
+                        e demais características da operação.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <strong>3</strong>
+                    <h3>Planejamento</h3>
+                    <p>
+                        A operação é organizada conforme
+                        as condições previamente alinhadas.
+                    </p>
+                </div>
+
+                <div class="step">
+                    <strong>4</strong>
+                    <h3>Execução</h3>
+                    <p>
+                        O transporte é realizado conforme
+                        o planejamento e as condições contratadas.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTEÚDO -->
+
+    <section id="conteudo">
+        <div class="container">
+
+            <div class="section-label">
+                Informação útil
+            </div>
+
+            <h2 class="section-title">
+                Conteúdos sobre transporte
+            </h2>
+
+            <p class="section-description">
+                Informações gerais para ajudar empresas e clientes
+                a entender melhor as etapas de uma operação de transporte.
+            </p>
+
+            <div class="articles">
+
+                <article class="article">
+                    <small>GUIA DO SETOR</small>
+
+                    <h3>
+                        Como organizar o transporte de uma carga
+                    </h3>
+
+                    <p>
+                        O planejamento de uma operação envolve informações
+                        sobre a carga, origem, destino, prazo e condições
+                        necessárias para realização do transporte.
+                    </p>
+                </article>
+
+
+                <article class="article">
+                    <small>GUIA DO SETOR</small>
+
+                    <h3>
+                        A importância do planejamento de rotas
+                    </h3>
+
+                    <p>
+                        Uma rota previamente analisada contribui para
+                        organizar o deslocamento e estabelecer as
+                        condições necessárias para a operação.
+                    </p>
+                </article>
+
+
+                <article class="article">
+                    <small>GUIA DO SETOR</small>
+
+                    <h3>
+                        Cuidados antes de contratar um transporte
+                    </h3>
+
+                    <p>
+                        Antes da contratação, é importante confirmar
+                        informações sobre a carga, local de coleta,
+                        destino, prazo e condições do serviço.
+                    </p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+
+    <section class="faq">
+        <div class="container">
+
+            <div class="section-label">
+                Dúvidas frequentes
+            </div>
+
+            <h2 class="section-title">
+                Perguntas frequentes
+            </h2>
+
+            <div class="faq-list">
+
+                <details>
+                    <summary>
+                        Qual é a atividade principal da empresa?
+                    </summary>
+
+                    <p>
+                        A atividade principal é o transporte rodoviário
+                        de carga, exceto produtos perigosos e mudanças,
+                        municipal, CNAE 49.30-2-01.
+                    </p>
+                </details>
+
+
+                <details>
+                    <summary>
+                        Onde a empresa está localizada?
+                    </summary>
+
+                    <p>
+                        A empresa está registrada na cidade do
+                        Rio de Janeiro, no estado do Rio de Janeiro.
+                    </p>
+                </details>
+
+
+                <details>
+                    <summary>
+                        Qual é a situação cadastral?
+                    </summary>
+
+                    <p>
+                        Conforme as informações fornecidas,
+                        a situação cadastral da empresa é Ativa.
+                    </p>
+                </details>
+
+
+                <details>
+                    <summary>
+                        A empresa realiza mudanças?
+                    </summary>
+
+                    <p>
+                        A atividade principal informada corresponde ao
+                        transporte rodoviário de carga, exceto produtos
+                        perigosos e mudanças.
+                    </p>
+                </details>
+
+
+                <details>
+                    <summary>
+                        Como solicitar informações sobre um transporte?
+                    </summary>
+
+                    <p>
+                        Entre em contato pelos canais oficiais da empresa
+                        para apresentar as informações da operação e
+                        verificar as condições do serviço.
+                    </p>
+                </details>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTATO -->
+
+    <section class="contact" id="contato">
+        <div class="container">
+
+            <div class="contact-grid">
+
+                <div>
+
+                    <div class="section-label">
+                        Fale conosco
+                    </div>
+
+                    <h2 class="section-title">
+                        Entre em contato
+                    </h2>
+
+                    <p>
+                        Para informações sobre transporte, apresente
+                        os detalhes da sua necessidade e aguarde
+                        o retorno da empresa.
+                    </p>
+
+                    <div class="contact-info">
+
+                        <div class="contact-item">
+                            <strong>Empresa</strong>
+                            <span>
+                                64.698.007 Jose Luiz Claudio Camargo
+                            </span>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>CNPJ</strong>
+                            <span>
+                                64.698.007/0001-01
+                            </span>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>Localização</strong>
+                            <span>
+                                Rio de Janeiro - RJ
+                            </span>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>Atividade</strong>
+                            <span>
+                                Transporte rodoviário de carga municipal
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <form onsubmit="enviarFormulario(event)">
+
+                    <div class="field">
+                        <label for="nome">Nome</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            placeholder="Seu nome"
+                            required>
+                    </div>
+
+                    <div class="field">
+                        <label for="telefone">Telefone</label>
+                        <input
+                            type="tel"
+                            id="telefone"
+                            placeholder="(00) 00000-0000"
+                            required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="voce@email.com"
+                            required>
+                    </div>
+
+                    <div class="field">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea
+                            id="mensagem"
+                            placeholder="Digite sua mensagem..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit">
+                        Enviar mensagem
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PRIVACIDADE -->
+
+    <section id="privacidade">
+        <div class="container">
+
+            <div class="section-label">
+                Conformidade
+            </div>
+
+            <h2 class="section-title">
+                Política de Privacidade
+            </h2>
+
+            <div class="privacy-box">
+
+                <h3>1. Dados que coletamos</h3>
+                <p>
+                    Podemos coletar dados fornecidos diretamente pelo
+                    visitante, como nome, telefone, e-mail e informações
+                    necessárias ao atendimento da solicitação.
+                </p>
+
+                <h3>2. Finalidade</h3>
+                <p>
+                    Os dados são utilizados para atendimento,
+                    comunicação, elaboração de informações comerciais
+                    e execução das atividades solicitadas.
+                </p>
+
+                <h3>3. Proteção dos dados</h3>
+                <p>
+                    São adotadas medidas razoáveis para preservar a
+                    segurança das informações disponibilizadas pelos
+                    usuários através dos canais digitais.
+                </p>
+
+                <h3>4. Compartilhamento</h3>
+                <p>
+                    Dados pessoais não são comercializados. Eventual
+                    compartilhamento ocorrerá somente quando necessário
+                    para atendimento, operação ou cumprimento de
+                    obrigações legais.
+                </p>
+
+                <h3>5. Cookies</h3>
+                <p>
+                    O site pode utilizar recursos técnicos necessários
+                    ao seu funcionamento. O visitante também pode
+                    administrar cookies através das configurações
+                    do navegador.
+                </p>
+
+                <h3>6. Direitos do titular</h3>
+                <p>
+                    O titular dos dados pode exercer os direitos previstos
+                    na legislação aplicável de proteção de dados pessoais,
+                    observadas as condições legais.
+                </p>
+
+                <h3>7. Contato</h3>
+                <p>
+                    Para dúvidas relacionadas à privacidade e ao tratamento
+                    de dados, utilize os canais oficiais disponibilizados
+                    pela empresa.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
 
 <footer>
 
-© 2025 Jose Luiz Claudio Camargo • CNPJ 64.698.007/0001-01
+    <div class="container">
 
-<br><br>
+        <div class="footer-grid">
 
-<a href="politica-de-privacidade.html">
-Política de Privacidade
-</a>
+            <div>
+                <h3>
+                    64.698.007 JOSE LUIZ CLAUDIO CAMARGO
+                </h3>
+
+                <p>
+                    Transporte rodoviário de carga, exceto produtos
+                    perigosos e mudanças, municipal.
+                </p>
+
+                <p style="margin-top:12px;">
+                    CNPJ: 64.698.007/0001-01
+                </p>
+            </div>
+
+
+            <div>
+
+                <h3>Navegação</h3>
+
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#empresa">Quem Somos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#conteudo">Conteúdo</a></li>
+                    <li><a href="#privacidade">Privacidade</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>Informações</h3>
+
+                <ul>
+                    <li>Rio de Janeiro - RJ</li>
+                    <li>CNPJ: 64.698.007/0001-01</li>
+                    <li>Fundada em 25/01/2026</li>
+                    <li>Situação: Ativa</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 64.698.007 Jose Luiz Claudio Camargo.
+            Todos os direitos reservados.
+
+        </div>
+
+    </div>
 
 </footer>
 
+
+<script>
+
+function enviarFormulario(event) {
+
+    event.preventDefault();
+
+    const nome = document.getElementById("nome").value;
+    const telefone = document.getElementById("telefone").value;
+    const email = document.getElementById("email").value;
+    const mensagem = document.getElementById("mensagem").value;
+
+    const texto =
+        "Olá! Gostaria de solicitar informações.%0A%0A" +
+        "Nome: " + encodeURIComponent(nome) + "%0A" +
+        "Telefone: " + encodeURIComponent(telefone) + "%0A" +
+        "E-mail: " + encodeURIComponent(email) + "%0A" +
+        "Mensagem: " + encodeURIComponent(mensagem);
+
+    /*
+       Substitua o número abaixo pelo WhatsApp oficial
+       da empresa quando tiver essa informação.
+    */
+
+    const whatsapp = "https://wa.me/5500000000000?text=" + texto;
+
+    window.open(whatsapp, "_blank");
+}
+
+</script>
+
 </body>
 </html>
+```
